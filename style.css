@@ -1,0 +1,139 @@
+body{
+	background: linear-gradient(-45deg, rgb(150,150,150), rgb(100, 96, 96), rgb(171, 162, 162), rgb(121, 110, 110));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  margin: 0;
+  height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.frame_line-right{
+  right: 0%;
+  top: 0%;
+  width: 1px;
+  height: 100%;
+}
+.frame_line-left {
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+.frame_line-top {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+.frame_line-bottom {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+.frame_line {
+  position: absolute;
+  background-color: white;
+  opacity: .5;
+}
+.frame {
+  position: fixed;
+  z-index: 10;
+  left: max(20px, 4vmin);
+  right: max(20px, 4vmin);
+  top: max(20px, 4vmin);
+  bottom: max(20px, 4vmin);
+}
+.siteHeader{
+  font-family: "Neue Montreal";
+  font-feature-settings: "palt";
+  color: white;
+  position: fixed;
+  z-index: 10;
+  left: calc((max(20px, 4vmin))*2);
+  top: calc((max(20px, 4vmin))*2);
+  margin-right: calc((max(20px, 4vmin))*2);
+}
+.siteHeader_Title {
+  margin: 0px;
+  font-weight: 900;
+  font-size: 40px;
+}
+.siteHeader_label {
+  margin-top: 0px;
+  font-weight: 100;
+}
+.siteHeader_nav {
+  margin-top: 50px;
+  display: block;
+}
+.btn-group{
+  padding-left: 0px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  row-gap: 10px;
+  list-style-type: none;
+}
+.button {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+.button:hover {
+  color: black;
+}
+
+.mainframe{
+  font-family: "Neue Montreal";
+  font-feature-settings: "palt";
+  color: white;
+  position: fixed;
+  z-index: 10;
+  right: calc((max(20px, 4vmin))*2);
+  bottom: calc((max(20px, 4vmin))*2);
+  margin-left: calc((max(20px, 4vmin))*2);
+}
+
+.subframe_about{
+  white-space: no-wrap;
+  line-height: 1.5;
+  font-weight: 200;
+  padding:0;
+  margin:0;
+}
+.subframe--hidden{
+  display:none;
+}
+
+.subframe_project{
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  row-gap: 10px;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+
+.subframe_contact{
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  row-gap: 10px;
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  font-size:larger;
+}
